@@ -13,7 +13,6 @@
       overflow: hidden;
       background-color: var(--background-color);
       color: var(--text-color);
-      /* transition: background-color 0.3s ease, color 0.3s ease; */
     }
 
     div.logo {
@@ -24,6 +23,10 @@
       margin-top: 80px;
       font-family: 'MarkPro-NarrowBook', 'Arial', sans-serif;
       text-align: center;
+    }
+
+    .success {
+      color: var(--support_success);
     }
   </style>
   <script type="text/javascript">
@@ -45,7 +48,7 @@
               fill:none;
             }
             .st1{
-              fill:#173361;
+              fill: var(--logo);
             }
         </style>
     <g>
@@ -101,7 +104,7 @@
 <div class='banner'>
   <h1>Authentication Complete</h1>
   <p>
-    You have successfully authenticated with Confluent Cloud using the account <b>{email}</b>.
+    You have successfully authenticated with Confluent Cloud using the account <b class="success">{email}</b>.
   </p>
   <p>
     If you prefer to log in with a different account, please head to
